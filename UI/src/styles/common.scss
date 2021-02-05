@@ -1,0 +1,229 @@
+/* general class */
+@import "./variables";
+@import "@/styles/mixins";
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+p {
+    margin: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.chosen {
+    opacity: 1 !important;
+}
+
+.ghost {
+    visibility: hidden !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: $hirakakuBold;
+    @extend .cursor-pointer;
+}
+
+.btn-clear {
+    background-color: $white;
+    border: 1px solid $blue;
+    color: $blue;
+}
+
+.btn-submit {
+    background-color: $blue;
+    color: $white;
+}
+
+.btn-disabled {
+    color: $white;
+    background-color: $lightGreyBackground;
+}
+
+.btn-cancel {
+    color: $blue;
+    background-color: $white;
+}
+
+/* Draggable list styles */
+.menu-list,
+.category-list {
+    .draggable-list {
+        position: relative;
+    }
+
+    .chosen {
+        opacity: 1 !important;
+    }
+
+    .ghost {
+        visibility: hidden !important;
+    }
+}
+
+.menu-list {
+    .chosen {
+        border-radius: 12px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .test {
+        opacity: 1 !important;
+    }
+}
+.message {
+    @include font(12px, $grey);
+}
+
+.main-contents {
+    padding: 40px 20px 20px;
+}
+.box-shadow {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: 1px solid $gallery;
+    background-color: $white;
+}
+/////////////////////////////////////////////////////////
+.order-search, .merchant-search, .menu-search {
+    .search-data-enter {
+        padding: 24px 20px;
+        background-color: $aliceBlue;
+        border-bottom: 1px solid $gallery;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+        .first-row, .second-row, .third-row {
+            @include flexbox();
+            @include align-items(center);
+            .input-text {
+                font-size: 16px;
+                width: 20%;
+                margin: 0 40px 0 12px;
+            }
+            &:not(:last-child) {
+                padding-bottom: 12px;
+            }
+        }
+    }
+   .data-table {
+        padding: 20px; 
+   }
+}
+
+.order-search, .merchant-search {
+    .data-table {
+        .el-table {
+            border: 1px solid $silver;
+            font-size: 16px;
+            th, td {
+                border-color: $silver;
+            }
+            th:not(:first-child) {
+                background-color: $aliceBlue;
+            }
+            th.is-leaf:first-child {
+                border-bottom: none;
+            }
+            &.second-table {
+                th {
+                    background-color: $aliceBlue; 
+                }
+                th.is-leaf:first-child {
+                    border-bottom: 1px solid $silver;
+                }
+            }
+            .el-table__body tr:hover>td {
+                background-color: $white;
+            }
+            .el-table__expanded-cell[class*=cell] {
+                padding: 20px 80px;
+            }
+            
+            .el-table__expand-column:first-child {
+                position: relative;
+                .cell {
+                    position: absolute;
+                    top: -5px;
+                    left: 14px;
+                }
+                .el-icon {
+                    font-size: 16px;
+                }
+            }
+        }
+    }  
+}
+
+.menu-review, .menu-search {
+    .detail-table {
+        .headings {
+            @include flexbox();
+            .heading-contents {
+                padding-right: 30px;
+                .each-heading {
+                    padding-right: 10px;
+                }
+            }
+        }
+        .details {
+            @include flexbox();
+            padding: 35px;
+            .each-column {
+                width: 20%;
+                word-wrap: break-word;
+                margin-right: 40px;
+                .image{
+                    @include flexbox();
+                    @include align-items(center);
+                    @include justify-content(center);
+                    border: 1px solid $silver;
+                    height: 175px;
+                    width: 100%;
+                }
+                p {
+                    padding-bottom: 4px;
+                }
+                .each-detail {
+                    .each-heading {
+                        font-weight: bold;
+                    } 
+                }
+                .each-detail:not(:last-child) {
+                    padding-bottom: 16px;
+                }
+            }
+        }
+    }
+}

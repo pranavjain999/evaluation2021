@@ -1,0 +1,115 @@
+{
+  "header": {
+    "title": "事前注文",
+    "header_details": "たかしストア"
+  },
+  "location": {
+    "show_nearBy_Stores": "この近くのお店を表示する",
+    "allow_location": "現在地情報の利用を許可する",
+    "enter_location": "エリア名・駅名を入力"
+  },
+  "custom_options": {
+    "create_option": "オプションテンプレートを作成しよう",
+    "enter_option": "オプションの入力が楽になります",
+    "close_option": "閉じる"
+  },
+  "dashboard": {
+    "todays_sale": "本日の売上",
+    "todays_total_order": "注文合計件数",
+    "todays_total_amount": "注文合計金額",
+    "weekly_total_order": "平日の売上平均件数",
+    "weekly_total_amount": "平日の注文平均金額",
+    "annotation_management": "注文管理",
+    "menu_management": "メニュー管理",
+    "store_management": "設定",
+    "review_management": "レビュー管理",
+    "new_order": "新規注文",
+    "order_preparing": "準備中",
+    "waiting_for_review": "受け取り待ち",
+    "need_help": "何かお困りですか？",
+    "ready_for_preorder": "事前注文の準備ができました",
+    "start_pre_order": "事前注文を開始する",
+    "no_data_found": "データがありません"
+  },
+  "add_menu_title": {
+    "menu_title": "商品名"
+  },
+  "msg": {
+    "max_32content_msg": "32文字まで",
+    "max_16content_msg": "16文字まで",
+    "max_200content_msg": "200文字まで"
+  },
+  "add_menu_details": {
+    "menu_name_for_store": "商品名（店舗用）",
+    "menu_price": "価格",
+    "price_unit": "円",
+    "menu_ Description_title": "説明文",
+    "import_menu_ Description": "説明文を入力",
+    "allergic_item": "アレルギー品目",
+    "select_allergic_monthly": "アレルギー品目を選択",
+    "offer_time_zone": "提供時間帯",
+    "offer-without_specification": "指定なし",
+    "bottom_text": "商品名・画像の変更は審査後に反映されます"
+  },
+  "buttons": {
+    "cancle_button": "キャンセル",
+    "set_more_details_button": "詳細を設定する",
+    "add_option_button": "オプションを追加する",
+    "preview_button": "プレビュー"
+  },
+  "image_select": {
+    "shoot_with_camera": "カメラで撮影",
+    "select_photo": "写真を選択"
+  },
+  "menu_management": {
+    "add_menu": "メニューを追加する",
+    "edit_common_option": "オプションテンプレートを編集する",
+    "copy_menu": "複製",
+    "to_edit": "編集する",
+    "edit_category": "カテゴリ名を編集",
+    "delete": "削除",
+    "add_menu_caption": "メニューを追加しましょう"
+  },
+  "bo": {
+    "user_id": "ユーザーID",
+    "order_id": "注文ID",
+    "payment_order_id": "支払い注文ID",
+    "order_date": "注文日",
+    "store_id": "店舗ID",
+    "total_amount": "合計金額",
+    "order_time": "注文時間",
+    "instruction_note": "インストラクションノート",
+    "order_status": "注文の状況",
+    "menu_id": "メニューID",
+    "menu_name": "メニュー名",
+    "number": "数",
+    "amount": "金額",
+    "options": "オプション",
+    "merchant_id": "販売者ID",
+    "apply_date": "申し込み日",
+    "review_date": "レビュー日",
+    "merchant_name": "販売者名",
+    "status": "状態",
+    "store_name": "店舗名",
+    "operation_time": "稼働時間",
+    "prepare_time_normal": "準備時間（通常）",
+    "prepare_time_busy": "準備時間（忙しい）",
+    "operation": "操作" ,
+    "menu_status": "メニューのステータス",
+    "price": "価格",
+    "category": "カテゴリー",
+    "description": "解説",
+    "created_at": "で作成された",
+    "updated_at": "で更新",
+    "allergy": "アレルギー",
+    "provide_time": "時間を提供する",
+    "approve_button": "承認する",
+    "reject_button": "拒否する",
+    "confirm": "確認",
+    "you_are_approving_this_merchant?": "この販売者を承認しますか？",
+    "you_are_rejecting_this_merchant?": "この商人を拒否しますか？",
+    "ok_button": "OK",
+    "cancel_button": "キャンセル",
+    "reject_reason": "拒否理由を入力してください（必須）"
+  }
+}
