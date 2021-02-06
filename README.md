@@ -1,4 +1,4 @@
-# OA
+# News App
 
 ## Project setup
 ```
