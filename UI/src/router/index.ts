@@ -1,44 +1,30 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Dashboard from '../views/dashboard/dashboard.vue'
-import OrderSearch from '../components/dashboard/ordersearch.vue'
-import MerchantSearch from '../components/dashboard/merchantsearch.vue'
-import MenuReview from '../components/dashboard/menureview.vue'
-import MenuSearch from '../components/dashboard/menusearch.vue'
+import Home from '../views/Home/Home.vue'
+
 Vue.use(VueRouter)
 
-const routes = [ 
+const routes = [
   {
-    path: '/', 
-    name: 'dashboard', 
-    component: Dashboard
- 
-  }, 
-  {
-    path: '/ordersearch', 
-    name: 'ordersearch', 
-    component: OrderSearch
+    path: '/',
+    name: 'Home',
+    component: Home
   },
   {
-    path: '/merchantsearch', 
-    name: 'merchantsearch', 
-    component: MerchantSearch
+    path: '/bookmarks',
+    name: 'Bookmarks',
+    component: () => import("../views/Bookmarks/Bookmarks.vue")
   },
   {
-    path: '/menusearch', 
-    name: 'menusearch', 
-    component: MenuSearch
-  },
-  {
-    path: '/menureview', 
-    name: 'menureview', 
-    component: MenuReview
+    path: '/news-detail',
+    name: 'NewsDetails',
+    component: () => import("../views/NewsDetails/NewsDetails.vue")
   },
 ]
 
-const router = new VueRouter( {
-  mode:'history', 
-  base:process.env.BASE_URL, 
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 
